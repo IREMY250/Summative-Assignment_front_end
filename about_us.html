@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Finance Dashboard</title>
+    <link rel="stylesheet" href="about_us.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>About Finance Dashboard</h1>
+        <p class="subtitle">Your personal finance companion</p>
+      </header>
+
+      <div class="card">
+        <h2>Our Mission</h2>
+        <p>
+          Finance Dashboard was created with a simple goal: to help students
+          take control of their finances. We believe that financial literacy
+          starts with awareness, and awareness starts with tracking. Our
+          minimalist approach removes the complexity often associated with
+          finance apps, giving you a clear, straightforward view of your money.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Why Finance Dashboard?</h2>
+        <p>
+          As finance students, we understand the importance of managing money
+          wisely. Whether you're tracking scholarship funds, part-time job
+          income, or daily expenses, having a clear picture of your financial
+          health is essential for success.
+        </p>
+
+        <div class="stats">
+          <div class="stat-item">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Free Forever</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">0</div>
+            <div class="stat-label">Hidden Fees</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">∞</div>
+            <div class="stat-label">Transactions</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Perfect for Students</h2>
+        <p>
+          Designed specifically with finance students in mind, our dashboard
+          helps you practice what you learn in class. Apply your knowledge of
+          budgeting, expense tracking, and financial planning to your own life.
+        </p>
+        <ul>
+          <li>Easy to use with no learning curve</li>
+          <li>Categorize expenses by type</li>
+          <li>See income vs. expenses at a glance</li>
+          <li>Build healthy financial habits</li>
+          <li>Perfect for personal finance projects</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Our Philosophy</h2>
+        <p>
+          We believe in simplicity over complexity. Instead of overwhelming you
+          with charts, graphs, and features you'll never use, we focus on what
+          matters: tracking your money and understanding where it goes. No ads,
+          no upsells, no distractions—just pure functionality.
+        </p>
+        <p>
+          Your privacy matters. All your data is stored locally on your device.
+          We don't collect, analyze, or sell your information. Your finances are
+          yours alone.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Get in Touch</h2>
+        <p>
+          Have questions, suggestions, or feedback? We'd love to hear from you!
+          Fill out the form below and we'll get back to you as soon as possible.
+        </p>
+
+        <form id="contactForm" style="margin-top: 32px">
+          <div style="margin-bottom: 20px">
+            <label
+              for="name"
+              style="display: block; margin-bottom: 8px; font-weight: 500"
+              >Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              placeholder="Your name"
+              required
+              style="
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #d2d2d7;
+                border-radius: 8px;
+                font-size: 1rem;
+              "
+            />
+            <span
+              class="error-message"
+              id="nameError"
+              style="
+                color: #ff3b30;
+                font-size: 0.85rem;
+                margin-top: 4px;
+                display: none;
+              "
+              >Name must be at least 2 characters</span
+            >
+          </div>
+
+          <div style="margin-bottom: 20px">
+            <label
+              for="email"
+              style="display: block; margin-bottom: 8px; font-weight: 500"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              placeholder="your.email@example.com"
+              required
+              style="
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #d2d2d7;
+                border-radius: 8px;
+                font-size: 1rem;
+              "
+            />
+            <span
+              class="error-message"
+              id="emailError"
+              style="
+                color: #ff3b30;
+                font-size: 0.85rem;
+                margin-top: 4px;
+                display: none;
+              "
+              >Please enter a valid email address</span
+            >
+          </div>
+
+          <div style="margin-bottom: 20px">
+            <label
+              for="subject"
+              style="display: block; margin-bottom: 8px; font-weight: 500"
+              >Subject</label
+            >
+            <select
+              id="subject"
+              required
+              style="
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #d2d2d7;
+                border-radius: 8px;
+                font-size: 1rem;
+                background: white;
+              "
+            >
+              <option value="">Select a subject</option>
+              <option value="general">General Inquiry</option>
+              <option value="support">Technical Support</option>
+              <option value="feedback">Feedback</option>
+              <option value="feature">Feature Request</option>
+              <option value="bug">Bug Report</option>
+            </select>
+          </div>
+
+          <div style="margin-bottom: 20px">
+            <label
+              for="message"
+              style="display: block; margin-bottom: 8px; font-weight: 500"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              placeholder="Tell us what's on your mind..."
+              required
+              style="
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #d2d2d7;
+                border-radius: 8px;
+                font-size: 1rem;
+                min-height: 150px;
+                resize: vertical;
+                font-family: inherit;
+              "
+            ></textarea>
+            <span
+              class="error-message"
+              id="messageError"
+              style="
+                color: #ff3b30;
+                font-size: 0.85rem;
+                margin-top: 4px;
+                display: none;
+              "
+              >Message must be at least 10 characters</span
+            >
+          </div>
+
+          <button
+            type="submit"
+            style="
+              width: 100%;
+              padding: 14px;
+              background: #0071e3;
+              color: white;
+              border: none;
+              border-radius: 8px;
+              font-size: 1rem;
+              font-weight: 500;
+              cursor: pointer;
+              transition: background 0.2s;
+            "
+          >
+            Send Message
+          </button>
+
+          <div
+            id="successMessage"
+            style="
+              display: none;
+              margin-top: 16px;
+              padding: 16px;
+              background: #d1f4e0;
+              color: #1d7a3f;
+              border-radius: 8px;
+              text-align: center;
+            "
+          >
+            ✓ Thank you! Your message has been sent successfully.
+          </div>
+        </form>
+      </div>
+
+      <div class="cta">
+        <a href="dashboard.html" class="btn">Start Tracking Now</a>
+      </div>
+
+      <footer>
+        <p>Built for finance students, by finance enthusiasts</p>
+        <p>© 2025 Finance Dashboard. All rights reserved.</p>
+      </footer>
+    </div>
+    <script src="about_us.js"></script>
+  </body>
+</html>
